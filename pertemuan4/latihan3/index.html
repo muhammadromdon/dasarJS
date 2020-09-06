@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Object di Javascript</h1>
+
+</body>
+
+</html>
+
+<script>
+
+    // Object literal
+
+    var mhs = {
+        nama: 'Romdon',
+        nrp: '8888232',
+        alamat: 'Perumahan Aksajaya'
+    }
+
+    // Function declaration
+
+    function buatObjectMahasiswa(nama, nrp, alamat) {
+        var mhs = {}
+        mhs.nama = nama
+        mhs.nrp = nrp
+        mhs.alamat = alamat
+        return mhs
+    }
+
+    mhs2 = buatObjectMahasiswa('Dani', '1231444', 'Perumahan Aksajaya')
+
+    //  Function constructor
+
+    function Mahasiswa(nama, nrp, alamat) {
+        // var this = {}                                    // jika menggunakan fungsi construct diibaratkan kita sudah diberi object this dan tidak perlu mereturn nilainya, dan kita harus menggunakan keyword new dalam setiap pemanggilan fungsinya
+        this.nama = nama
+        this.nrp = nrp
+        this.alamat = alamat
+        // return this
+    }
+
+    mhs3 = new Mahasiswa('Tupac', '7777777', 'L.A.')
+
+</script>
